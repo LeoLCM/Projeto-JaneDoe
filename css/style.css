@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Raleway", sans-serif;
     margin: 0;
@@ -25,7 +29,7 @@ nav ul li a {
     color: #555;
 }
 
-main#banner {
+section#banner {
     background-image: url('../img/jane.jpg');
     width: 100%;
     height: 73vh;
@@ -57,9 +61,6 @@ width: 40vw;
 main#about h1 {
     padding-top: 80px; 
 }
-main#music ul li a {
-
-}
 
 div ul {
     padding-left: 0; 
@@ -68,4 +69,65 @@ div ul {
 
 div ul li {
     padding-bottom: 15px;
+}
+
+/* Home v2 */
+
+section#concept,
+section#songs,
+main#contact {
+    width: 900px;
+    margin: 30px auto;
+}
+
+section#songs img {
+    width: 100%;
+}
+
+.duas-colunas > div {
+    width: 50%;
+    float: left;
+}
+
+.duas-colunas {
+    overflow: hidden;
+}
+
+section#songs ol li {
+    padding: 15px 0;
+}
+
+section#songs ol li strong {
+    color: orange;
+}
+
+section#form-mapa iframe {
+    width: 100%;
+    height: 400px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+form .form-group {
+    margin: 2px 0 10px;
+}
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    
+border: none;
+padding: 5px, 20px;
+background-color: orange;
+color: white;
+}
+
+.mapa {
+    padding-left: 20px;
 }
